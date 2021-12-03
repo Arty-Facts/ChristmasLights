@@ -5,9 +5,9 @@ from rainbowio import colorwheel
 import neopixel
 
 pixel_pin = board.D18
-num_pixels = 8
+num_pixels = 100
 
-pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=0.5, auto_write=False)
+pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=1, auto_write=False)
 
 
 def color_chase(color, wait):
