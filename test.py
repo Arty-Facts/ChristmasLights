@@ -33,7 +33,8 @@ GREEN = (0, 255, 0)
 CYAN = (0, 255, 255)
 BLUE = (0, 0, 255)
 PURPLE = (180, 0, 255)
-
+print("Running...")
+i = 1
 while True:
     pixels.fill(RED)
     pixels.show()
@@ -54,3 +55,5 @@ while True:
     color_chase(PURPLE, 0.1)
 
     rainbow_cycle(0)  # Increase the number to slow down the rainbow
+    print(f"cycle {i}", end="\r")
+    i += 1
