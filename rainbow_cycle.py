@@ -38,7 +38,6 @@ i = 1
 for c in [RED, YELLOW, GREEN, CYAN, BLUE, PURPLE]:
     print(f"fill {c}")
     color_chase(c, 0.01)
-    pixels.show()
     # Increase or decrease to change the speed of the solid color change.
 print("while")
 while True:
