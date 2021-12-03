@@ -42,6 +42,6 @@ for c in [RED, YELLOW, GREEN, CYAN, BLUE, PURPLE]:
     # Increase or decrease to change the speed of the solid color change.
 print("while")
 while True:
-    rainbow_cycle(1)  # Increase the number to slow down the rainbow
+    rainbow_cycle(0)  # Increase the number to slow down the rainbow
     print(f"cycle {i}", end="\r")
     i += 1
