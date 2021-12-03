@@ -35,17 +35,12 @@ BLUE = (0, 0, 255)
 PURPLE = (180, 0, 255)
 print("Running...")
 i = 1
-while True:
-    pixels.fill(RED)
+for c in [RED, YELLOW, GREEN, CYAN, BLUE, PURPLE]:
+    pixels.fill(c)
     pixels.show()
     # Increase or decrease to change the speed of the solid color change.
-    time.sleep(1)
-    pixels.fill(GREEN)
-    pixels.show()
-    time.sleep(1)
-    pixels.fill(BLUE)
-    pixels.show()
-    time.sleep(1)
+    time.sleep(5)
+while True:
 
     color_chase(RED, 0.1)  # Increase the number to slow down the color chase
     color_chase(YELLOW, 0.1)
