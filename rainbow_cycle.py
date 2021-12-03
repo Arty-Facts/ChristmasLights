@@ -37,21 +37,13 @@ print("Running...")
 i = 1
 for c in [RED, YELLOW, GREEN, CYAN, BLUE, PURPLE]:
     print(f"fill {c}")
-    pixels.fill(c)
+    color_chase(c)
     pixels.show()
     # Increase or decrease to change the speed of the solid color change.
     time.sleep(5)
 
 print("while")
 while True:
-
-    color_chase(RED, 1)  # Increase the number to slow down the color chase
-    color_chase(YELLOW, 1)
-    color_chase(GREEN, 1)
-    color_chase(CYAN, 1)
-    color_chase(BLUE, 1)
-    color_chase(PURPLE, 1)
-
-    rainbow_cycle(0)  # Increase the number to slow down the rainbow
+    rainbow_cycle(1)  # Increase the number to slow down the rainbow
     print(f"cycle {i}", end="\r")
     i += 1
