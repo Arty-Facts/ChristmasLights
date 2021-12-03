@@ -1,19 +1,12 @@
 import board
-import digitalio
-import busio
+import neopixel
+from time import sleep
 
-print("Hello blinka!")
+pixel_pin = board.D18
+num_pixels = 8
 
-# Try to great a Digital input
-pin = digitalio.DigitalInOut(board.D4)
-print("Digital IO ok!")
-
-# Try to create an I2C device
-i2c = busio.I2C(board.SCL, board.SDA)
-print("I2C ok!")
-
-# Try to create an SPI device
-spi = busio.SPI(board.SCLK, board.MOSI, board.MISO)
-print("SPI ok!")
-
-print("done!")
+pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=0.5)
+pixels.fill((0,0,0))
+sleep(2)
+pixels.fill((255,0,0))
+pixels.show()
