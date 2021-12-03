@@ -40,8 +40,6 @@ for c in [RED, YELLOW, GREEN, CYAN, BLUE, PURPLE]:
     color_chase(c, 0.1)
     pixels.show()
     # Increase or decrease to change the speed of the solid color change.
-    time.sleep(5)
-
 print("while")
 while True:
     rainbow_cycle(1)  # Increase the number to slow down the rainbow
