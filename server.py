@@ -21,7 +21,7 @@ def set():
         r, g, b = list(map(int, rgb.split(",")))
         pixels[int(index)] = (r, g, b)
     pixels.show()
-    return "\n".join((f"{k}->{v}" for k,v in request.form.items()))
+    return str(pixels)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
