@@ -1,3 +1,5 @@
 requests
 colr
 opencv-python
+matplotlib
+numpy
