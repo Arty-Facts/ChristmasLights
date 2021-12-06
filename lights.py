@@ -38,14 +38,12 @@ class demo_board:
     def show(self):
         print("".join(map(colored, self.data)), end="\r")
 
-
 if ON_PI:
     pixel_pin = board.D18
     impl_bord = neopixel.NeoPixel
 else:
     pixel_pin = None
     impl_bord = demo_board
-
 
 class Lights():
     def __init__(self, nb_ligths=100, brightness=1, auto_write=False):
