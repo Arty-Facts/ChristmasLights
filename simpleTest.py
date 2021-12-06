@@ -3,7 +3,7 @@ import board
 from rainbowio import colorwheel
 import neopixel
 
-pixel_pin = board.D18
+pixel_pin = board.D21
 num_pixels = 100
 
 pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=1, auto_write=False)
